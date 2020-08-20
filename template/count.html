@@ -1,0 +1,9 @@
+<h1>You have {{ words }} words in your text</h1>
+<a href="{% url 'home' %}">Start Over</a>
+<h2>Your Text:</h2>
+{{ txt }}
+<h3>Count of each words</h3>
+{% for word, count in wordsdic %}
+{{ word }} : {{ count }}
+<br>
+{% endfor %}
